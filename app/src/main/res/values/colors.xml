@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ColorPrimary">#00897B</color>
+    <color name="ColorPrimaryDark">#00695C</color>
+    <color name="tabsScrollColor">#004D40</color>
+    <color name="red">#f00</color>
+    <color name="white">#fff</color>
+    <color name="pink">#F4AFBD</color>
+    <color name="yello">#FFD68F</color>
+</resources>

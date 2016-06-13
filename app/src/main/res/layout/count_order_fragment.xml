@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/fragment_container">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="รหัสผู้ใช้งาน : "/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/ediUserCode"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="เลขที่อ้างอิง : "/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/ediFileName"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:text="คลังสินค้า :    "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/spinStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:background="@android:drawable/btn_dropdown"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BARCODE : "/>
+            <EditText
+                android:id="@+id/inBarcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:singleLine="true"
+                />
+
+            <Button
+                android:id="@+id/btnClearBarcode"
+                android:text="ลบ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+            <Button
+                android:id="@+id/btnSendBarcode"
+                android:text="กด"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:text="จำนวน : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ediQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLines="1"/>
+        </LinearLayout>
+
+
+
+
+        <GridLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="3"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btn1"
+                android:text="1" />
+
+            <Button android:id="@+id/btn2"
+                android:text="2" />
+
+            <Button android:id="@+id/btn3"
+                android:text="3" />
+
+            <Button android:id="@+id/btn4"
+                android:text="4" />
+
+            <Button android:id="@+id/btn5"
+                android:text="5" />
+
+            <Button android:id="@+id/btn6"
+                android:text="6" />
+
+            <Button android:id="@+id/btn7"
+                android:text="7" />
+
+            <Button android:id="@+id/btn8"
+                android:text="8" />
+
+            <Button android:id="@+id/btn9"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btnEnter"
+                android:text="Enter" />
+
+            <Button android:id="@+id/btn0"
+                android:text="0" />
+
+            <Button android:id="@+id/btnClear"
+                android:text="ลบ" />
+
+            <TextView android:layout_columnSpan="3"/>
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="รวมจำนวนบาร์ : "/>
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewTotalItem"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="รวมจำนวนชิ้น : " />
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewToTalQty"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:id="@+id/viewResult"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnSend"
+                android:text="ส่งข้อมูล"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="50px">
+
+            <Button
+                android:id="@+id/btnClerall"
+                android:background="@color/red"
+                android:text="ยกเลิกการทำรายการ"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </FrameLayout>
+</ScrollView>

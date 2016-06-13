@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BARCODE : "/>
+
+        <EditText
+            android:id="@+id/ediBarcode"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="send"
+                android:id="@+id/btnsend"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="แผนก : "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/ediDepartment"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="30px"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="รหัสซื้อขาย : "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/ediBarcode2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:paddingTop="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อสินค้า : "/>
+            <TextView
+                android:paddingTop="30px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/ediInventname"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="30px"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:background="@color/pink"
+                android:text="ราคาขาย (กทม.) : "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:background="@color/pink"
+                android:id="@+id/ediBankokPrice"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="10px"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:background="@color/yello"
+                android:text="ราคาขาย (ขอนแก่น) : "/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yello"
+                android:textSize="18dp"
+                android:id="@+id/ediOtherPrice"/>
+
+        </LinearLayout>
+        <TableLayout
+        android:paddingTop="30px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/accent_material_dark"
+                android:textSize="18dp"
+                android:text="คลัง"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/accent_material_dark"
+                android:textSize="18dp"
+
+                android:text="คงเหลือ"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/accent_material_dark"
+                android:textSize="18dp"
+
+                android:text="ค้างรับ"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/accent_material_dark"
+                android:textSize="18dp"
+
+                android:text="ค้างส่ง"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:paddingTop="30px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:id="@+id/priceTable">
+
+
+     </TableLayout>
+
+        <TableLayout
+            android:paddingTop="100px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:background="@color/primary_material_light"
+
+                    android:text="รวม : "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:background="@color/primary_material_light"
+                    android:id="@+id/ediSumRemine"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:background="@color/primary_material_light"
+
+                    android:id="@+id/ediSumRecive"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:background="@color/primary_material_light"
+
+                    android:id="@+id/ediSumDelivery"/>
+            </TableRow>
+        </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <HorizontalScrollView
+            android:scrollbars="horizontal|vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <TableLayout
+            android:paddingTop="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/accent_material_dark"
+                    android:textSize="18dp"
+                    android:text="วันที่"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/accent_material_dark"
+                    android:textSize="18dp"
+                    android:text="เลขที่"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/accent_material_dark"
+                    android:textSize="18dp"
+                    android:text="รหัสสินค้า"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/accent_material_dark"
+                    android:textSize="18dp"
+
+                    android:text="ซื้อ"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/accent_material_dark"
+                    android:textSize="18dp"
+
+                    android:text="แถม"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/accent_material_dark"
+                    android:textSize="18dp"
+
+                    android:text="ราคาต่อหน่วย"/>
+            </TableRow>
+        </TableLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>
